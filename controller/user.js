@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 
 const data = JSON.parse(
-  fs.readFileSync(path.resolve(__dirname, "demo.json"), "utf-8")
+  fs.readFileSync(path.resolve(__dirname, "../demo.json"), "utf-8")
 );
 const user = data.users;
 
