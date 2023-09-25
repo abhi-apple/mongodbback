@@ -1,5 +1,9 @@
 const fs = require("fs");
-const data = JSON.parse(fs.readFileSync("demo.json", "utf-8"));
+const path = require("path");
+
+const data = JSON.parse(
+  fs.readFileSync(path.resolve(__dirname, "demo.json"), "utf-8")
+);
 const user = data.users;
 
 exports.getall = (req, res) => {
